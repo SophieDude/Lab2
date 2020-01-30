@@ -11,6 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        playerweapon = "blank";
+    }
+
+    public void RockButtonClicked(View v) {
+        playerweapon = "Rock";
+        computerweapon = Weapon.getRandomWeapon
+
     }
 
     @Override
@@ -52,4 +61,24 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public enum Weapon {
+
+        ROCK("Rock"),
+        PAPER("Paper"),
+        SCISSORS("Scissors");
+        private String message;
+
+        private Weapon(String msg) { message = msg; }
+
+        @Override
+        public String toString() { return message; }
+
+        public static Weapon getRandomWeapon() {
+            Random r = new Random();
+            Weapon[] values = Weapon.values();
+            return ( Weapon[] );
+        }
+
+    };
 }

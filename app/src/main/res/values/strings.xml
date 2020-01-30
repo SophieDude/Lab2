@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Lab2</string>
     <string name="action_settings">Settings</string>
+    <string name="welcome_to_scissors_rock_paper">Welcome to Scissors-Rock-Paper!</string>
+    <string name="choose_your_fate">Choose your Fate</string>
+    <string name="paper">Paper</string>
+    <string name="scissors">Scissors</string>
+    <string name="rock">Rock</string>
+    <string name="player_0_computer_0">Player: 0, Computer: 0</string>
+    <string name="your_weapon">Your Weapon:</string>
+    <string name="computer_s_weapon">Computer\'s Weapon:</string>
+    <string name="you_all_lose_i_have_gun">You all lose! I have GUN!</string>
 </resources>

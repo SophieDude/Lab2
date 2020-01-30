@@ -22,60 +22,61 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center|top"
-            android:text="Welcome to Scissors-Rock-Paper!"
+            android:text="@string/welcome_to_scissors_rock_paper"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/ChooseView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Choose your Fate"
+            android:text="@string/choose_your_fate"
             android:textAlignment="center" />
 
         <Button
             android:id="@+id/PaperButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Paper" />
+            android:text="@string/paper" />
 
         <Button
             android:id="@+id/ScissorsButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Scissors" />
+            android:text="@string/scissors" />
 
         <Button
             android:id="@+id/RockButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rock" />
+            android:onClick="RockButtonClicked"
+            android:text="@string/rock" />
 
         <TextView
             android:id="@+id/WinCountView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Player: 0, Computer: 0"
+            android:text="@string/player_0_computer_0"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/PlayerWeaponView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Your Weapon:"
+            android:text="@string/your_weapon"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/ComputerWeaponView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Computer's Weapon:"
+            android:text="@string/computer_s_weapon"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/FunView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="You all lose! I have GUN!"
+            android:text="@string/you_all_lose_i_have_gun"
             android:textAlignment="center" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
