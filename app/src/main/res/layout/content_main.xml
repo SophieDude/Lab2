@@ -36,26 +36,35 @@
             android:id="@+id/PaperButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="paperButtonClicked"
             android:text="@string/paper" />
 
         <Button
             android:id="@+id/ScissorsButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="scissorsButtonClicked"
             android:text="@string/scissors" />
 
         <Button
             android:id="@+id/RockButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="RockButtonClicked"
+            android:onClick="rockButtonClicked"
             android:text="@string/rock" />
 
         <TextView
-            android:id="@+id/WinCountView"
+            android:id="@+id/PScoreView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/player_0_computer_0"
+            android:text="Player Score"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/CScoreView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computer Score"
             android:textAlignment="center" />
 
         <TextView
@@ -76,7 +85,6 @@
             android:id="@+id/FunView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/you_all_lose_i_have_gun"
             android:textAlignment="center" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
